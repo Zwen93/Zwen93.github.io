@@ -3,8 +3,79 @@
 <head>
 	<meta charset="utf-8">
 	<title>MyGitHub</title>
+	<style type="text/css">
+
+		ul{
+			list-style: none;
+		}
+		a{
+			text-decoration:none;
+		}
+		#root{
+			display:flex;
+			display: -webkit-flex;
+			flex-direction: column;
+			align-items:center;
+			width:50%;
+			height:720px;
+			margin:10% auto;
+			border:1px solid #333;
+			box-shadow:5px 5px 5px #666;
+			overflow: hidden;
+		}
+		#root #nav_1{
+			padding: 0;
+			order:1;
+			width:60%;
+			height:60px;
+			overflow: hidden;
+			background-color: #FFF;
+			transition: height 1s ease-in-out;
+			border-bottom:1px solid #CCC;
+		}
+		#root #nav_1:hover{
+			height:300px;
+		}
+		#root #nav_1 li{
+			color:#eb7350;
+			text-align:center;
+			transition:padding-left 0.2s ease-in;
+		}
+		#root #nav_1 li:hover{
+			padding-left:20px;
+		}
+		#root #nav_1 li a{
+			color:#eb7350;
+			font-size:26px;
+			display: block;
+			height:60px;
+			line-height: 60px;
+			transition:background-color 0.3s linear; 
+		}
+		#root #nav_1 li a:hover{
+			color:#FFF;
+			background-color: #eb7350;
+			border-radius: 10px 5px;
+		}
+	</style>
 </head>
 <body>
-<p>test</p>
+	<div id="root">
+		<ul id="nav_1">
+			<li><a href="">DEMO</a>
+			</li>
+			<li><a href="htmlpreview.github.io/?https://github.com/Zwen93/web-demo/blob/master/canvas-3d-demo/canvas-demo.html" target="_blank">Canvas旋转3D球</a>
+			</li>
+			<li><a href="htmlpreview.github.io/?https://github.com/Zwen93/web-demo/blob/master/snake-demo/snake-dom-demo.html" target="_blank">贪吃蛇</a>
+			</li>
+			<li><a href="htmlpreview.github.io/?https://github.com/Zwen93/web-demo/blob/master/mss-html-demo/demo.html" target="_blank">微软商店首页</a>
+			</li>
+			<li><a href="http://htmlpreview.github.io/?https://github.com/Zwen93/web-demo/blob/master/signup-ajax-php-demo/login.html" target="_blank">AJAX后台检查注册信息</a>
+			</li>
+		</ul>
+		<ul>
+			
+		</ul>
+	</div>
 </body>
 </html>
